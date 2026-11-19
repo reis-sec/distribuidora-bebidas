@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10231d">
+  <meta name="description" content="Acesse o catálogo da sua distribuidora de bebidas.">
+  <title>Estação Bebidas</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/login.css?v=20261113">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main id="auth-screen" class="auth-screen">
+    <section class="auth-intro" aria-label="Estação Bebidas">
+      <a class="brand brand-light" href="/" aria-label="Estação Bebidas, início">
+        <span class="brand-mark">E</span>
+        <span>estação<span class="brand-soft"> bebidas</span></span>
+      </a>
+      <div class="intro-copy">
+        <span class="eyebrow eyebrow-light">SEU PRÓXIMO BRINDE COMEÇA AQUI</span>
+        <h1>Sua bebida favorita,<br><span>pronta para o próximo encontro.</span></h1>
+        <p>Bebidas geladas, boas escolhas e motivos para estar junto.</p>
+      </div>
+<p class="intro-foot">Uma boa seleção para todos os seus momentos.</p>
+    </section>
+
+    <section class="auth-panel">
+      <div class="auth-card">
+        <div class="mobile-brand brand">
+          <span class="brand-mark">E</span><span>estação<span class="brand-soft"> bebidas</span></span>
+        </div>
+        <div id="login-view">
+          <span class="eyebrow">BEM-VINDO DE VOLTA</span>
+          <h2>Que bom ter você aqui.</h2>
+          <p class="muted">Entre e encontre a bebida certa para o seu momento.</p>
+          <form id="login-form" class="form-stack">
+            <label for="login-email">E-mail</label>
+            <input id="login-email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required>
+            <label for="login-password">Senha</label>
+            <input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Sua senha" required>
+            <p class="form-error" id="login-error" role="alert"></p>
+            <button class="button button-primary button-wide" type="submit">Entrar <span aria-hidden="true">→</span></button>
+          </form>
+          <p class="auth-switch">Ainda não tem cadastro? <button class="text-button" type="button" data-show-register>Criar conta</button></p>
+        </div>
+
+        <div id="register-view" hidden>
+          <span class="eyebrow">É RÁPIDO E GRATUITO</span>
+          <h2>Crie sua conta</h2>
+          <p class="muted">Cadastre-se para ver nosso catálogo de bebidas.</p>
+          <form id="register-form" class="form-stack">
+            <label for="register-name">Nome</label>
+            <input id="register-name" name="name" type="text" autocomplete="name" maxlength="120" placeholder="Seu nome" required>
+            <label for="register-email">E-mail</label>
+            <input id="register-email" name="email" type="email" autocomplete="email" maxlength="190" placeholder="voce@exemplo.com" required>
+            <label for="register-password">Senha</label>
+            <input id="register-password" name="password" type="password" autocomplete="new-password" minlength="8" maxlength="72" placeholder="De 8 a 72 caracteres simples" required>
+            <p class="form-error" id="register-error" role="alert"></p>
+            <button class="button button-primary button-wide" type="submit">Criar minha conta <span aria-hidden="true">→</span></button>
+          </form>
+          <p class="auth-switch">Já tem cadastro? <button class="text-button" type="button" data-show-login>Fazer login</button></p>
+        </div>
+      </div>
+      <p class="auth-legal">Catálogo atualizado pela equipe da Estação Bebidas.</p>
+    </section>
+  </main>
+
+  <main id="app-screen" class="app-screen" hidden>
+    <header class="topbar">
+      <a class="brand" href="#catalog" aria-label="Estação Bebidas">
+        <span class="brand-mark">E</span><span>estação<span class="brand-soft"> bebidas</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <button class="nav-link active" type="button" data-section="catalog">Catálogo</button>
+        <button class="nav-link admin-only" type="button" data-section="manage" hidden>Gerenciar bebidas</button>
+        <button class="nav-link admin-only" type="button" data-section="users" hidden>Clientes</button>
+      </nav>
+      <div class="user-menu">
+        <span class="user-greeting">Olá, <strong id="user-name"></strong></span>
+        <button id="logout-button" class="button button-outline" type="button">Sair</button>
+      </div>
+    </header>
+
+    <section id="catalog-section" class="content-section">
+      <div class="page-heading">
+        <div><span class="eyebrow">ESCOLHA COM CALMA</span><h1>Nosso catálogo</h1>
+          <p class="muted">Confira bebidas, petiscos e doces disponíveis no momento.</p></div>
+        <span id="product-count" class="count-pill">0 produtos</span>
+      </div>
+      <nav id="category-filters" class="category-filters" aria-label="Filtrar por categoria"></nav>
+      <div id="catalog-message" class="notice" hidden></div>
+      <div id="product-grid" class="product-grid" aria-live="polite"></div>
+      <div id="empty-catalog" class="empty-state" hidden>
+        <span class="empty-mark">✳</span><h2>Estamos preparando o catálogo</h2>
+        <p>Os produtos disponíveis aparecerão aqui em breve.</p>
+      </div>
+      <div id="empty-filter" class="empty-state" hidden>
+        <span class="empty-mark">✳</span><h2>Nenhum produto nesta categoria</h2>
+        <p>Escolha outra categoria para continuar navegando.</p>
+      </div>
+    </section>
+
+    <section id="manage-section" class="content-section" hidden>
+      <div class="page-heading">
+        <div><span class="eyebrow">ÁREA ADMINISTRATIVA</span><h1>Gerenciar catálogo</h1>
+          <p class="muted">Mantenha os produtos e o estoque atualizados.</p></div>
+      </div>
+      <div class="manage-layout">
+        <form id="product-form" class="manage-card">
+          <div class="card-heading"><div><span class="eyebrow">CADASTRO</span><h2 id="product-form-title">Adicionar produto</h2></div><span class="form-icon">＋</span></div>
+          <input type="hidden" name="id" id="product-id">
+          <label for="product-category">Categoria</label>
+          <select id="product-category" name="category" required>
+            <option value="Whiskeys">Whiskeys</option>
+            <option value="Cervejas">Cervejas</option>
+            <option value="Refrigerantes">Refrigerantes</option>
+            <option value="Gelos Saborizados">Gelos Saborizados</option>
+            <option value="Energéticos Variados">Energéticos Variados</option>
+            <option value="Águas">Águas</option>
+            <option value="Salgadinhos">Salgadinhos</option>
+            <option value="Doces">Doces</option>
+            <option value="Outros">Outros</option>
+          </select>
+          <label for="product-name">Nome do produto</label>
+          <input id="product-name" name="name" type="text" maxlength="140" placeholder="Ex.: Água com gás" required>
+          <label for="product-description">Descrição <span class="optional">opcional</span></label>
+          <textarea id="product-description" name="description" rows="3" maxlength="2000" placeholder="Detalhes que ajudam na escolha"></textarea>
+          <div class="form-row">
+            <div><label for="product-price">Preço (R$)</label><input id="product-price" name="price" type="number" min="0.01" max="99999999" step="0.01" placeholder="12,90" required></div>
+            <div><label for="product-stock">Estoque</label><input id="product-stock" name="stock" type="number" min="0" max="1000000" step="1" placeholder="24" required></div>
+          </div>
+          <label for="product-image">Foto <span class="optional">JPG, PNG ou WEBP · até 5 MB</span></label>
+          <input id="product-image" name="image" type="file" accept="image/jpeg,image/png,image/webp">
+          <label for="product-active">Disponibilidade</label>
+          <select id="product-active" name="active"><option value="true">Disponível no catálogo</option><option value="false">Ocultar do catálogo</option></select>
+          <p class="form-error" id="product-error" role="alert"></p>
+          <div class="button-row"><button id="save-product" class="button button-primary" type="submit">Salvar bebida</button><button id="cancel-edit" class="button button-subtle" type="button" hidden>Cancelar</button></div>
+        </form>
+        <div class="manage-list-wrap">
+          <div class="list-heading"><div><span class="eyebrow">INVENTÁRIO</span><h2>Produtos cadastrados</h2></div><span id="inventory-count" class="count-pill">0</span></div>
+          <div id="inventory-list" class="inventory-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="users-section" class="content-section" hidden>
+      <div class="page-heading"><div><span class="eyebrow">CONTAS CADASTRADAS</span><h1>Clientes</h1><p class="muted">Contas criadas pela tela de cadastro.</p></div></div>
+      <div class="table-wrap"><table><thead><tr><th>Nome</th><th>E-mail</th><th>Cadastro</th><th>Status</th></tr></thead><tbody id="users-table"></tbody></table></div>
+      <div id="users-message" class="notice" hidden></div>
+    </section>
+
+    <footer class="app-footer"><span>estação bebidas</span><span>Beba com responsabilidade.</span></footer>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
