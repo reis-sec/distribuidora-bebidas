@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 420" role="img" aria-label="Ilustração de um pacote de balas sortidas">
+  <defs>
+    <linearGradient id="bag" x2="1" y2="1"><stop stop-color="#fff8fb"/><stop offset=".45" stop-color="#f3d9e7"/><stop offset="1" stop-color="#e5b5cf"/></linearGradient>
+    <filter id="shadow" x="-.5" y="-.5" width="2" height="2"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <ellipse cx="240" cy="364" rx="92" ry="13" fill="#583a4a" opacity=".13" filter="url(#shadow)"/>
+  <path d="M159 89l30-26h102l30 26 12 219q1 19-18 22H165q-19-3-18-22z" fill="url(#bag)" stroke="#c88ba9" stroke-width="4"/>
+  <path d="M189 63h102l19 18H170z" fill="#fceef5" stroke="#c88ba9" stroke-width="3"/>
+  <path d="M176 130h128v60H176z" fill="#d87ea1"/>
+  <text x="240" y="155" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#fff8fa" letter-spacing="2">DOCES</text>
+  <text x="240" y="175" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#fff8fa" letter-spacing="1.5">SORTIDOS</text>
+  <g stroke="#fff7e9" stroke-width="4">
+    <circle cx="197" cy="231" r="24" fill="#f4b940"/><circle cx="240" cy="220" r="25" fill="#8dbf72"/><circle cx="283" cy="234" r="24" fill="#e98688"/>
+    <circle cx="216" cy="274" r="23" fill="#8fa9df"/><circle cx="264" cy="275" r="23" fill="#eab0cc"/>
+  </g>
+  <path d="M173 307q67 21 134 0v18q-67 20-134 0z" fill="#d7a2bd" opacity=".6"/>
+</svg>

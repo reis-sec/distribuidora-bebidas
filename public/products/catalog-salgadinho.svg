@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 420" role="img" aria-label="Ilustração de um pacote de salgadinho sabor queijo">
+  <defs>
+    <linearGradient id="pack" x2="1" y2="1"><stop stop-color="#ffe88e"/><stop offset=".45" stop-color="#f5b842"/><stop offset="1" stop-color="#df8128"/></linearGradient>
+    <filter id="shadow" x="-.5" y="-.5" width="2" height="2"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <ellipse cx="240" cy="363" rx="94" ry="13" fill="#493718" opacity=".13" filter="url(#shadow)"/>
+  <path d="M164 72l33 13h86l33-13 18 46-11 206-28 23h-96l-28-23-11-206z" fill="url(#pack)" stroke="#cb7c23" stroke-width="4"/>
+  <path d="M164 72l33 13h86l33-13 8 20-29 13h-110l-29-13zM164 324l29 15h94l29-15 6 16-28 17h-108l-28-17z" fill="#fff0af" stroke="#d38a31" stroke-width="2"/>
+  <path d="M181 147q59-33 118 0v111q-59 33-118 0z" fill="#fff7db" stroke="#d58f34" stroke-width="3"/>
+  <path d="M196 202q22-38 44 0t44 0" fill="none" stroke="#e5a63e" stroke-width="17" stroke-linecap="round"/>
+  <text x="240" y="175" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#876021" letter-spacing="2">CROCANTE</text>
+  <text x="240" y="244" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#8d6120" letter-spacing="1">SABOR QUEIJO</text>
+  <circle cx="210" cy="286" r="7" fill="#e6a52e"/><circle cx="239" cy="291" r="7" fill="#f1c04b"/><circle cx="269" cy="284" r="7" fill="#db8b28"/>
+</svg>

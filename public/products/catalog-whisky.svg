@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 420" role="img" aria-label="Ilustração de uma garrafa de whisky">
+  <defs>
+    <linearGradient id="glass" x2="1"><stop stop-color="#76502b"/><stop offset=".24" stop-color="#d5a94d"/><stop offset=".52" stop-color="#f1cf75"/><stop offset=".8" stop-color="#a46a2a"/><stop offset="1" stop-color="#5d3a20"/></linearGradient>
+    <linearGradient id="liquid" x2="1"><stop stop-color="#9d5514"/><stop offset=".5" stop-color="#e5a02a"/><stop offset="1" stop-color="#8a4312"/></linearGradient>
+    <filter id="shadow" x="-.5" y="-.5" width="2" height="2"><feGaussianBlur stdDeviation="9"/></filter>
+  </defs>
+  <ellipse cx="240" cy="375" rx="82" ry="13" fill="#3d3327" opacity=".14" filter="url(#shadow)"/>
+  <path d="M211 48h58v52c0 19 13 30 24 44 11 14 17 34 17 56v147c0 18-14 32-32 32h-76c-18 0-32-14-32-32V200c0-22 6-42 17-56 11-14 24-25 24-44z" fill="url(#glass)" stroke="#765526" stroke-width="4"/>
+  <path d="M216 37h48v28h-48z" rx="4" fill="#3b3325"/><path d="M208 63h64v13h-64z" fill="#c39b4e"/>
+  <path d="M177 235h126v87c0 10-8 18-18 18h-90c-10 0-18-8-18-18z" fill="url(#liquid)" opacity=".85"/>
+  <path d="M174 205q66-19 132 0v115q0 19-19 19h-94q-19 0-19-19z" fill="#eee5cb" stroke="#8b7145" stroke-width="3"/>
+  <path d="M183 220h114v83H183z" fill="#e7d5a3" stroke="#b79b5e" stroke-width="2"/>
+  <text x="240" y="252" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#594226" letter-spacing="3">RESERVA</text>
+  <text x="240" y="280" text-anchor="middle" font-family="Georgia,serif" font-size="25" font-weight="bold" fill="#3a2c1f">WHISKY</text>
+  <text x="240" y="299" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#66533b" letter-spacing="2">BLENDED</text>
+  <path d="M193 105q-27 42-25 92v135q0 23 17 31" fill="none" stroke="#fff3c9" stroke-width="7" opacity=".34"/>
+</svg>

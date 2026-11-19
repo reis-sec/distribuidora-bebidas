@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 420" role="img" aria-label="Ilustração de uma lata de cerveja pilsen">
+  <defs>
+    <linearGradient id="can" x2="1"><stop stop-color="#9c6a13"/><stop offset=".2" stop-color="#f1c75c"/><stop offset=".5" stop-color="#ffe69a"/><stop offset=".8" stop-color="#d29a2e"/><stop offset="1" stop-color="#91600e"/></linearGradient>
+    <filter id="shadow" x="-.5" y="-.5" width="2" height="2"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <ellipse cx="240" cy="366" rx="76" ry="12" fill="#34382b" opacity=".15" filter="url(#shadow)"/>
+  <rect x="169" y="61" width="142" height="289" rx="27" fill="url(#can)" stroke="#a9791e" stroke-width="3"/>
+  <ellipse cx="240" cy="72" rx="64" ry="13" fill="#d9d9d4" stroke="#898b86" stroke-width="3"/>
+  <ellipse cx="240" cy="340" rx="64" ry="11" fill="#b7b8b1" stroke="#74766f" stroke-width="3"/>
+  <path d="M201 57h78v18h-78z" fill="#e7e8e1" stroke="#aaa99e" stroke-width="2"/>
+  <path d="M184 147h112v126H184z" fill="#fff5d7" stroke="#bd8a26" stroke-width="3"/>
+  <circle cx="240" cy="209" r="42" fill="#dfaf3c"/>
+  <text x="240" y="204" text-anchor="middle" font-family="Georgia,serif" font-size="19" font-weight="bold" fill="#fff9e8">PILSEN</text>
+  <text x="240" y="227" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#604819" letter-spacing="2">CERVEJA</text>
+  <path d="M190 100v35M290 100v35" stroke="#fff4cb" stroke-width="8" opacity=".4"/>
+</svg>

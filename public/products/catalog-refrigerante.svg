@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 420" role="img" aria-label="Ilustração de uma garrafa de refrigerante sabor cola">
+  <defs>
+    <linearGradient id="bottle" x2="1"><stop stop-color="#3c1110"/><stop offset=".25" stop-color="#a53220"/><stop offset=".53" stop-color="#6e1d18"/><stop offset=".78" stop-color="#c34b2b"/><stop offset="1" stop-color="#4a1512"/></linearGradient>
+    <linearGradient id="drink" x2="1"><stop stop-color="#542014"/><stop offset=".5" stop-color="#8d3520"/><stop offset="1" stop-color="#43160f"/></linearGradient>
+    <filter id="shadow" x="-.5" y="-.5" width="2" height="2"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <ellipse cx="240" cy="374" rx="77" ry="12" fill="#3d2520" opacity=".15" filter="url(#shadow)"/>
+  <path d="M216 43h48v42c0 19 11 25 22 39 13 16 18 36 18 58v162c0 19-13 32-32 32h-64c-19 0-32-13-32-32V182c0-22 5-42 18-58 11-14 22-20 22-39z" fill="url(#bottle)" stroke="#59211a" stroke-width="4"/>
+  <rect x="209" y="29" width="62" height="26" rx="6" fill="#b72d24"/><path d="M206 53h68v11h-68z" fill="#e05339"/>
+  <path d="M183 194h114v106q0 16-16 16h-82q-16 0-16-16z" fill="url(#drink)" opacity=".7"/>
+  <path d="M177 183q63-17 126 0v100H177z" fill="#f4eee3" stroke="#a63a2a" stroke-width="3"/>
+  <path d="M188 198h104v70H188z" fill="#bd3528"/>
+  <text x="240" y="230" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#fff6dd">COLA</text>
+  <text x="240" y="250" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#ffe9cd" letter-spacing="2">REFRIGERANTE</text>
+  <path d="M199 100q-27 39-27 83v157q0 16 13 24" fill="none" stroke="#fff" stroke-width="7" opacity=".2"/>
+</svg>

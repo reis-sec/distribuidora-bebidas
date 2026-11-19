@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 420" role="img" aria-label="Ilustração de um pacote de gelo saborizado de limão">
+  <defs>
+    <linearGradient id="bag" x2=".9" y2="1"><stop stop-color="#f9ffff" stop-opacity=".95"/><stop offset=".5" stop-color="#c9ebea" stop-opacity=".86"/><stop offset="1" stop-color="#8dc9d1" stop-opacity=".95"/></linearGradient>
+    <linearGradient id="ice" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#9dd9e2" stop-opacity=".7"/></linearGradient>
+    <filter id="shadow" x="-.5" y="-.5" width="2" height="2"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <ellipse cx="240" cy="365" rx="99" ry="13" fill="#31575a" opacity=".13" filter="url(#shadow)"/>
+  <path d="M157 91l24-31h118l24 31 14 222q2 22-20 25H163q-22-3-20-25z" fill="url(#bag)" stroke="#78b9c0" stroke-width="4"/>
+  <path d="M180 60h120l15 23H165z" fill="#e4f4ef" stroke="#78b9c0" stroke-width="3"/>
+  <path d="M172 256l37-34 35 31 31-39 42 38 5 62q1 16-16 18H173q-17-2-16-18z" fill="#d1eff0" opacity=".8"/>
+  <g fill="url(#ice)" stroke="#87c6ce" stroke-width="3">
+    <path d="M181 166l31-18 31 17-2 36-31 18-30-17z"/><path d="M241 170l29-17 29 17-1 33-30 17-28-16z"/>
+    <path d="M211 214l29-17 29 17-1 33-29 17-29-16z"/><path d="M270 211l25-15 26 15v29l-26 15-25-15z"/>
+  </g>
+  <path d="M208 104h64v41h-64z" rx="12" fill="#ecf7dd" stroke="#a8c75f" stroke-width="2"/>
+  <text x="240" y="123" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#4d7c45">GELO</text>
+  <text x="240" y="138" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#6e9148" letter-spacing="1.4">LIMÃO</text>
+  <circle cx="302" cy="119" r="19" fill="#d7ea72" stroke="#89ad45" stroke-width="2"/><path d="M302 101v36M284 119h36M289 106l26 26M315 106l-26 26" stroke="#fffbd3" stroke-width="2"/>
+</svg>
