@@ -1,0 +1,27 @@
+{
+  "name": "distribuidora-bebidas",
+  "version": "1.1.1",
+  "private": true,
+  "description": "Catálogo e administração de uma distribuidora de bebidas",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "create-admin": "node scripts/create-admin.js",
+    "seed-catalog": "node scripts/seed-catalog.js",
+    "download-product-images": "node scripts/download-product-images.js",
+    "generate-image-sources-doc": "node scripts/generate-image-sources-doc.js"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-session": "^2.1.1",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.3",
+    "helmet": "^8.3.0",
+    "multer": "^2.5.0",
+    "mysql2": "^3.24.6"
+  }
+}
